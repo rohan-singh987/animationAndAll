@@ -1,8 +1,10 @@
 "use client";
 import React, { useRef } from 'react'
 import video from '../../public/flowerrr.mp4'
+import rocket from '../../public/rocketRobo.png'
 import Cards from './Cards';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 
 const cards = [
     {
@@ -38,7 +40,7 @@ const VerCardSlider = () => {
         target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["-35%", "40%"]);
 
     return (
         <div>
@@ -53,7 +55,7 @@ const VerCardSlider = () => {
                 </div>
             </div>
 
-            <section ref={targetRef} className="relative h-[150vh]  ">
+            <section ref={targetRef} className="relative py-16  ">
                 <div className="sticky top-0 flex h-1/3 items-center overflow-hidden">
                     <motion.div style={{ x }} className="flex gap-10">
                         {cards.map((card) => {
@@ -62,6 +64,7 @@ const VerCardSlider = () => {
                     </motion.div>
                 </div>
             </section>
+
         </div>
     )
 }

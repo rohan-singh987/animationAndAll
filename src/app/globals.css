@@ -2,4 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+.vertical-timeline::before {
+  /* this is the vertical line */
 
+  background: black !important;
+}
+
+.rocket {
+  transform: translate(850px, -365px);
+  animation: shimmy 3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(50px, 0px);
+  }
+  50% {
+    transform: translate(100px, -165px);
+  }
+  75% {
+    transform: translate(700px, -265px);
+  }
+  100% {
+    transform: translate(00px, 0px);
+  }
+}
+
+.dragon {
+  animation: drg 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes drg {
+  0% {
+    transform: translate(-5rem, -5rem);
+  }
+  100% {
+    transform: translate(10rem, -3rem);
+  }
+}

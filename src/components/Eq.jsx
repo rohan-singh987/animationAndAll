@@ -32,12 +32,12 @@ const Eq = () => {
 
     return (
         <div className='grid lg:grid-cols-3 grid-cols-1 my-28 relative'>
-            <motion.div className='absolute'
-                ref={ref}
-                initial="hidden"
-                animate={controls}
-                variants={animationVariants}
-                transition={animationTransition}
+            <motion.div className='absolute rocket'
+                // ref={ref}
+                // initial="hidden"
+                // animate={controls}
+                // variants={animationVariants}
+                // transition={animationTransition}
             >
                 <Image src={rocket} className='relative bottom-0 hover:bottom-20 transition-all w-fit ' alt='' />
             </motion.div>

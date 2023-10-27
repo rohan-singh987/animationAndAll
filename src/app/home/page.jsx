@@ -6,6 +6,7 @@ import VerCardSlider from '@/components/HorzCardSlider'
 import WorkWithUs from '@/components/WorkWithUs'
 import React from 'react'
 import Eq from '@/components/Eq'
+import Aos from 'aos'
 
 const Home = () => {
     return (
