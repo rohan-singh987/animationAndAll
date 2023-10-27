@@ -44,11 +44,11 @@ const VerCardSlider = () => {
 
     return (
         <div>
-            <div className='flex justify-start items-center'>
+            <div className='flex lg:flex-row flex-col justify-start items-center'>
                 <h2 className='font-bold md:text-4xl text-2xl'>
                     Does this sound familiar....
                 </h2>
-                <div className='w-[7%] ms-7'>
+                <div className='md:w-[7%] w-1/2 ms-7'>
                     <video loop autoPlay={true} muted className='w-fit' >
                         <source src={video} />
                     </video>
