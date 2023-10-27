@@ -5,12 +5,14 @@ import Vacancies from '@/components/Vacancies'
 import VerCardSlider from '@/components/HorzCardSlider'
 import WorkWithUs from '@/components/WorkWithUs'
 import React from 'react'
+import Eq from '@/components/Eq'
 
 const Home = () => {
     return (
         <div className='md:mx-12 mx-3'>
             <Navbar />
             <Header />
+            <Eq />
             <VerCardSlider />
             <TimelineSortof />
             <WorkWithUs />
