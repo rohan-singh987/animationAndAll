@@ -2,7 +2,9 @@ import React from 'react'
 
 const Vacancies = () => {
   return (
-    <div>Vacancies</div>
+    <div>
+      
+    </div>
   )
 }
 

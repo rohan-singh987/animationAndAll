@@ -7,6 +7,7 @@ import WorkWithUs from '@/components/WorkWithUs'
 import React from 'react'
 import Eq from '@/components/Eq'
 import Aos from 'aos'
+import AboutAhead from '@/components/AboutAhead'
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <VerCardSlider />
             <TimelineSortof />
             <WorkWithUs />
+            <AboutAhead />
             <Vacancies />
         </div>
     )
